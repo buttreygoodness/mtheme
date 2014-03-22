@@ -1,6 +1,6 @@
 var config = {
   taskName: 'jshint',
-  all: ['Gruntfile.js', 'tasks', 'assets/src/scripts/**/*.js'],
+  all: ['Gruntfile.js', 'tasks', 'assets/src/scripts/**/!(modernizr).js'],
   options: {
     expr: true,
     indent: 2,
