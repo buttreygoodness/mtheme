@@ -4,6 +4,7 @@
   "description": "Mediumesque theme for Ghost.",
   "main": "grunt",
   "scripts": {
+    "start": "grunt",
     "test": "grunt test"
   },
   "repository": {
