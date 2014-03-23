@@ -1,16 +1,9 @@
 define(['jquery'], function ( $ ) {
 
-  var siteHelper = function () {};
+  var SiteHelper = function () {};
 
-  siteHelper.prototype.initial = function () {
-    return $('link[rel=\'alternate\']').attr('title').charAt(0).toUpperCase();
-  };
-
-  siteHelper.prototype.logo = function () {
-    return $('.icons-logo');
-  };
-
-  siteHelper.prototype.init = function () {
+  SiteHelper.prototype.init = function () {
+    console.log('SiteHelper');
     var initial = this.initial();
     var logo = this.logo();
     logo.html('<p>' + initial + '</p>');
@@ -20,5 +13,13 @@ define(['jquery'], function ( $ ) {
     });
   };
 
-  return siteHelper;
+  SiteHelper.prototype.initial = function () {
+    return $('link[rel=\'alternate\']').attr('title').charAt(0).toUpperCase();
+  };
+
+  SiteHelper.prototype.logo = function () {
+    return $('.icons-logo');
+  };
+
+  return SiteHelper;
 });

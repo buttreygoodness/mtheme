@@ -1,12 +1,28 @@
-define(['helpers/site', 'helpers/index', 'helpers/post'], function (SiteHelper, IndexHelper, PostHelper) {
-  var mtheme = function () {
-    console.log(SiteHelper, IndexHelper, PostHelper);
-  };
+require(['helpers/site', 'helpers/index', 'helpers/post', 'lodash'], function (SiteHelper, IndexHelper, PostHelper, _) {
 
-  mtheme.prototype.init = function () {
+  var Mtheme = function () {};
+
+  Mtheme.prototype.init = function () {
     var site = new SiteHelper();
     site.init();
+
+    var bc = this.bodyClass();
+
+    if (_.contains(bc, 'home-template')) {
+      var index = new IndexHelper();
+      index.init();
+    }
+
+    if (_.contains(bc, 'post-template')) {
+      var post = new PostHelper();
+      post.init();
+    }
   };
 
-  return mtheme;
+  Mtheme.prototype.bodyClass = function () {
+    return document.querySelector('body').className;
+  };
+
+  var mtheme = new Mtheme();
+  mtheme.init();
 });
