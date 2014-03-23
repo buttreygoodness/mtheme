@@ -1,10 +1,11 @@
-define([], function () {
+define(['helpers/site', 'helpers/index', 'helpers/post'], function (SiteHelper, IndexHelper, PostHelper) {
   var mtheme = function () {
-
+    console.log(SiteHelper, IndexHelper, PostHelper);
   };
 
   mtheme.prototype.init = function () {
-    console.log(this, 'initted');
+    var site = new SiteHelper();
+    site.init();
   };
 
   return mtheme;

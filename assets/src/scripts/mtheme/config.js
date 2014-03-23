@@ -1,6 +1,8 @@
 require.config({
   paths: {
-    instantclick: '../../components/instantclick/instantclick',
+    jquery: '../../../components/jquery/jquery',
+    instantclick: '../../../components/instantclick/instantclick',
+    scrollmagic: '../../../components/ScrollMagic/js/jquery.scrollmagic'
     // jQuery: '../lib/jquery/jquery',
     // Promiz: '../lib/promiz/promiz',
     // Backbone: '../lib/backbone/backbone'
@@ -11,9 +13,14 @@ require.config({
       exports: 'InstantClick'
     },
 
-    // jQuery: {
-    //   exports: 'jQuery'
-    // },
+    jquery: {
+      exports: 'jQuery'
+    },
+
+    scrollmagic: {
+      exports: 'ScrollMagic',
+      deps: ['jquery']
+    }
 
     // Backbone: {
     //   exports: 'Backbone',
