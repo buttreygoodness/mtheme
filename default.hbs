@@ -26,16 +26,8 @@
 
     {{ghost_foot}} {{! Ghost outputs important scripts and data with this tag }}
   </body>
-  <script data-main="/assets/dist/scripts/mtheme.min" src="{{asset "components/requirejs/require.js"}}"></script>
-  <!-- 
-  <script src="{{asset "components/ScrollMagic/js/jquery.scrollmagic.min.js"}}"></script>
-  <script src="{{asset "components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js"}}"></script>
-  <script src="{{asset "dist/scripts/site.js"}}"></script>
-  {{#if post}}
-    <script src="{{asset "dist/scripts/post.js"}}"></script>
-  {{else}}
-    <script src="{{asset "dist/scripts/index.js"}}"></script>
-  {{/if}}
+  <script data-no-instant data-main="/assets/dist/scripts/mtheme.min" src="{{asset "components/requirejs/require.js"}}"></script>
+  <!--
   <script src="{{asset "components/instantclick/instantclick.js"}}" data-no-instant></script>
   <script data-no-instant>InstantClick.init(50);</script>
    -->

@@ -2,8 +2,7 @@ var config = {
   taskName: 'requirejs',
   compile: {
     options: {
-      generateSourceMaps: true,
-      optimize: 'none',
+      optimize: 'uglify',
       name: 'mtheme',
       baseUrl: 'assets/src/scripts/mtheme',
       mainConfigFile: 'assets/src/scripts/mtheme/config.js',
