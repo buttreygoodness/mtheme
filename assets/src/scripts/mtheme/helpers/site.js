@@ -11,6 +11,31 @@ define(['jquery'], function ( $ ) {
       e.preventDefault();
       document.location.href = '/';
     });
+    this.hideLogoThinWidth();
+  };
+
+  SiteHelper.prototype.hideLogoThinWidth = function () {
+    var screen_content = $('.screen-content');
+    var icons_logo = $('.site-nav-logo');
+    var trigger_top = 150;
+
+    screen_content.scroll(function () {
+      var width = screen_content.width();
+      if ( width >= 900) {
+        return;
+      }
+
+      var scroll_top = screen_content.scrollTop();
+
+      if ( scroll_top > trigger_top && !icons_logo.hasClass('fadeaway') ) {
+        icons_logo.addClass('fadeaway');
+      }
+
+      if ( scroll_top < trigger_top && icons_logo.hasClass('fadeaway')) {
+        icons_logo.removeClass('fadeaway');
+      }
+
+    }.bind(this));
   };
 
   SiteHelper.prototype.initial = function () {

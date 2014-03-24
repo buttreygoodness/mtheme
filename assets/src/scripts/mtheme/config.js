@@ -4,6 +4,7 @@ require.config({
     lodash: '../../../../../../../bower_components/lodash/dist/lodash', // use Ghost's lodash
     instantclick: '../../../components/instantclick/instantclick',
     scrollmagic: '../../../components/ScrollMagic/js/jquery.scrollmagic',
+    scrollmagic_debug: '../../../components/ScrollMagic/js/jquery.scrollmagic.debug',
     tweenmax: '../../../components/ScrollMagic/js/_dependent/greensock/TweenMax.min'
   },
 
@@ -23,6 +24,11 @@ require.config({
     scrollmagic: {
       exports: ['ScrollMagic'],
       deps: ['jquery', 'tweenmax']
+    },
+
+    scrollmagic_debug : {
+      exports: ['ScrollMagic'],
+      deps: ['scrollmagic']
     },
 
     tweenmax: {

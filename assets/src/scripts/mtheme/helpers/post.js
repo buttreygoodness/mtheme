@@ -23,7 +23,7 @@ define(['scrollmagic', 'jquery'], function (ScrollMagic, $) {
   PostHelper.prototype.setPostScroll = function () {
     var controller = new ScrollMagic({container: '.screen-content'}),
         tween = TweenMax.to('.story-cover-content', 0.5, {className: '+=story-cover-fade' }),
-        scene = new ScrollScene( {triggerElement: '#scrollPinOne', duration: 1200, offset: -200} )
+        scene = new ScrollScene( {triggerElement: '#scrollPinOne', duration: 600, offset: 0} )
           .setTween(tween)
           .addTo(controller);
 
