@@ -13,6 +13,7 @@ var gruntFile = function(grunt) {
   configLoader.loadAll();
 
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-less');
@@ -20,7 +21,7 @@ var gruntFile = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['jshint:all', 'requirejs', 'less:watch', 'autoprefixer:watch', 'copy:build']);
+  grunt.registerTask('build', ['jshint:all', 'requirejs', 'less:watch', 'autoprefixer:watch', 'copy:build', 'copy:templates']);
   grunt.registerTask('default', ['watch']);
 };
 
