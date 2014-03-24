@@ -26,9 +26,5 @@
 
     {{ghost_foot}} {{! Ghost outputs important scripts and data with this tag }}
   </body>
-  <script data-no-instant data-main="/assets/dist/scripts/mtheme.min" src="{{asset "components/requirejs/require.js"}}"></script>
-  <!--
-  <script src="{{asset "components/instantclick/instantclick.js"}}" data-no-instant></script>
-  <script data-no-instant>InstantClick.init(50);</script>
-   -->
+  <script data-main="{{asset "dist/scripts/mtheme.min.js"}}" src="{{asset "components/requirejs/require.js"}}"></script>
 </html>

@@ -3,7 +3,6 @@ define(['jquery'], function ( $ ) {
   var SiteHelper = function () {};
 
   SiteHelper.prototype.init = function () {
-    console.log('SiteHelper');
     var initial = this.initial();
     var logo = this.logo();
     logo.html('<p>' + initial + '</p>');
@@ -21,7 +20,7 @@ define(['jquery'], function ( $ ) {
 
     screen_content.scroll(function () {
       var width = screen_content.width();
-      if ( width >= 900) {
+      if ( width >= 900 ) {
         return;
       }
 

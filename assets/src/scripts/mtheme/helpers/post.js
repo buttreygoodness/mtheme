@@ -3,7 +3,6 @@ define(['scrollmagic', 'jquery'], function (ScrollMagic, $) {
   var PostHelper = function () {};
 
   PostHelper.prototype.init = function () {
-    console.log('PostHelper');
     this.setCoverImage();
     this.setPostScroll();
     this.setCoverArrow();
