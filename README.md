@@ -18,7 +18,7 @@ Adding a cover image to a post is as simple as creating an image in your markup 
 
 `![COVER_IMAGE]`
 
-And uploading an image to that placeholder location from within Ghost.
+...and uploading an image to that placeholder location from within Ghost.
 
 All other photos in the post are treated as regular photos.
 
