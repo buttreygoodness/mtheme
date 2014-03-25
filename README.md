@@ -28,5 +28,9 @@ For now, linking to pages and external resources is done in the footer, which is
 
 Links can be added and changed there.
 
+### Screenshot
+
+![screenshot](https://raw.githubusercontent.com/buttreygoodness/mtheme/master/screenshot.png)
+
 
 mtheme's cover images courtesy GH Cheng (http://www.flickr.com/photos/ghcheng/) from creative commons licenced photos.
