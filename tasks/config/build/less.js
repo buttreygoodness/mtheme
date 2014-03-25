@@ -8,7 +8,7 @@ var config = {
       'assets/dist/styles/mtheme.css': 'assets/src/styles/mtheme.less'
     }
   },
-  dist: {
+  build: {
     options: {
       paths: ['assets/src/styles/**/*.less'],
       cleancss: true

@@ -21,7 +21,7 @@ var gruntFile = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['jshint:all', 'requirejs', 'less:watch', 'autoprefixer:watch', 'copy:build', 'copy:templates']);
+  grunt.registerTask('build', ['jshint:all', 'requirejs', 'less:build', 'autoprefixer:watch', 'copy:build', 'copy:templates']);
   grunt.registerTask('default', ['watch']);
 };
 
