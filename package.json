@@ -1,6 +1,6 @@
 {
   "name": "mtheme",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Mediumesque theme for Ghost.",
   "main": "grunt",
   "scripts": {
